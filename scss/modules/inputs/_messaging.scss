@@ -116,4 +116,8 @@
   &:hover {
     border-color: $color-shade-darkest !important;
   }
+  &:focus+#primary_file_button:not(:hover):not(.active) {
+    border-color: $color-shade-darkest !important;
+  }
 }
+

@@ -406,6 +406,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #msg_input:hover { border-color: #101010 !important; }
 
+#msg_input:focus + #primary_file_button:not(:hover):not(.active) { border-color: #101010 !important; }
+
 .ts_toggle .ts_toggle_button { background: #101010; color: #00b9f2; }
 
 .ts_toggle .ts_toggle_button .ts_toggle_handle { background: #181818; }
