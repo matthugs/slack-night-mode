@@ -79,6 +79,7 @@
 
 #footer {
   background: $color-base;
+  background-image: none!important;
 
   &.disabled #message-input {
     background: padding-box $color-shade-dark !important;
@@ -105,4 +106,13 @@
 
 #special_formatting_text {
   color: $color-highlight;
+}
+
+#msg_input {
+  color: $base-font-color !important;
+  border-color: $color-shade-dark !important;
+
+  &:hover {
+    border-color: $color-shade-darkest !important;
+  }
 }
