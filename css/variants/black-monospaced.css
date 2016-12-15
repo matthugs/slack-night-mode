@@ -390,7 +390,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #primary_file_button.active, #primary_file_button:hover { background: #424242; border: 2px solid #363636; color: #949494; }
 
-#footer, #footer:not(.footer_msg_input) { background: #222; }
+#footer, #footer:not(.footer_msg_input) { background: #222; background-image: none !important; }
 
 #footer.disabled #message-input { background: padding-box #363636 !important; border: 2px solid #363636 !important; }
 
@@ -401,6 +401,10 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 #notification_bar.wide #typing_text.overflow_ellipsis { -webkit-filter: none; filter: none; }
 
 #special_formatting_text { color: #949494; }
+
+#msg_input { color: #e6e6e6 !important; border-color: #363636 !important; }
+
+#msg_input:hover { border-color: #000 !important; }
 
 .ts_toggle .ts_toggle_button { background: #000; color: #e6e6e6; }
 
