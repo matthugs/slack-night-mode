@@ -402,7 +402,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #special_formatting_text { color: #a3839f; }
 
-#msg_input { color: #f0d9ed !important; border-color: #4d394b !important; }
+#msg_input { color: #f0d9ed !important; background: none !important; border-color: #4d394b !important; }
 
 #msg_input:hover { border-color: #372c36 !important; }
 
