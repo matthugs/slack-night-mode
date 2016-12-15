@@ -1,38 +1,70 @@
 # Slack Night Mode
-A Stylish style for easy Slack theming. [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
+
+A stylesheet for the desktop Slack application. [CC BY-SA 3.0
+US](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
 ## Usage
 
-This theme requires that you use the Stylish extension for your browser (available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/), [Chrome](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe), and [Safari](http://sobolev.us/stylish/)).
+Making use of this stylesheet can be achieved in two
+steps. Unfortunately you'll need to do both steps each time you open
+the desktop app; I currently have no effective way of persisting the
+change.
 
-Unfortunately, if you're using the desktop version of Slack, you will not be able to use this theme (as explained on [my blog post](http://blog.lacour.me/making-slack-night-mode#toc_1)).
+1. [Opening Browser Developer Tools](#opening-developer-tools)
+2. Running
+```js
+$.ajax({
+  url: "https://cdn.rawgit.com/matthugs/slack-night-mode/master/css/black.css",
+  success: function(css) {
+    $("<style></style>").appendTo("head").html(css);
+  }
+});
+```
+in the javascript console (which can be brought up with the keystroke
+C-`). If you don't execute any other javascript in the lifetime of
+that slack session, you can easily replay this statement later by
+using the up arrow, since Chromium's console history is persistent.
+
+### Opening Developer Tools
+
+I've only come across ways of doing this for the Windows and Linux
+desktop applications, but the OSX version currently eludes me. If
+anyone has that solution, I would be delighted to see that pull
+request.
+
+#### Linux
+
+There's an environment variable for that! Launch slack with
+`SLACK_DEVELOPER_MENU=nonempty slack &`, a change persistable in any
+number of different ways (e.g. by writing a small shell script).
+
+#### Windows
+
+For reasons that are a complete mystery to me, Windows users at my
+place of work have been able to open developer tools by clicking
+repeatedly on empty space in the Team selection drawer on the far-left
+side of the screen. This drawer is open by default for users who are a
+member of multiple teams. I'm not sure if there's an easy was of
+opening that drawer for users who are not members of multiple teams.
 
 ## Themes
 
 ### Supported
 
-#### Black ([source](scss/main.scss) - [build](css/black.css) - [install](https://userstyles.org/styles/117475/slack-night-mode-black))
+#### Black ([source](scss/main.scss) - [build](css/black.css))
 
-The primary supported theme. This is an excellent theme if you use a program like f.lux or redshift.
+
+The primary supported theme. This is an excellent theme if you use a
+program like f.lux or redshift.
 
 ![Black Screenshot](https://userstyles.org/style_screenshots/117475_after.png)
 
-#### Aubergine ([source](scss/themes/_aubergine.scss) - [build](css/variants/aubergine.css) - [install](https://userstyles.org/styles/101971/slack-night-mode))
+(Other themes are supported by laCour's version, and these are built
+and available to be tried out for a spin. I haven't tested them,
+however, and can make no guarantees about their suitability on the
+eyes.)
 
-This is based on Slack's aubergine/maroon style. It's the original theme.
+## Note
 
-![Aubergine Screenshot](https://userstyles.org/style_screenshots/101971_after.png)
-
-### Variants
-
-#### Midnight Blue ([source](scss/themes/_midnight-blue.scss) - [build](css/variants/midnight-blue.css))
-
-#### Tomorrow Dark (base16) ([repository](https://github.com/danarnold/slack-night-mode))
-
-### Extensions
-
-Variants can have extensions which add additional changes.
-
-#### Monospaced ([source](scss/themes/_monospaced.scss))
-
-Replaces the messaging font stack with a monospace font stack.
+laCour's work, on which this project is based, is licensed under a
+significantly more permissive license.

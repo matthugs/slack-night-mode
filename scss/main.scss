@@ -1,88 +1,84 @@
-@-moz-document regexp("https://[^./]*\\.slack\\.com/.*") {
+@import "helpers/variables";
+@import "helpers/mixins";
 
-  @import "helpers/variables";
-  @import "helpers/mixins";
+@import "layout/base";
+@import "layout/sidebar";
+@import "layout/monkey-scroll";
 
-  @import "layout/base";
-  @import "layout/sidebar";
-  @import "layout/monkey-scroll";
+@import "modules/loader";
 
-  @import "modules/loader";
+@import "modules/inputs/base";
+@import "modules/inputs/chzn";
+@import "modules/inputs/filter-select";
+@import "modules/inputs/messaging";
+@import "modules/inputs/toggle";
 
-  @import "modules/inputs/base";
-  @import "modules/inputs/chzn";
-  @import "modules/inputs/filter-select";
-  @import "modules/inputs/messaging";
-  @import "modules/inputs/toggle";
+@import "modules/menu/base";
+@import "modules/menu/team";
+@import "modules/menu/file";
+@import "modules/menu/popover";
+@import "modules/menu/calendar";
+@import "modules/menu/autocomplete";
+@import "modules/menu/tabcomplete";
+@import "modules/menu/flex";
+@import "modules/menu/filters";
+@import "modules/menu/direct-messaging";
 
-  @import "modules/menu/base";
-  @import "modules/menu/team";
-  @import "modules/menu/file";
-  @import "modules/menu/popover";
-  @import "modules/menu/calendar";
-  @import "modules/menu/autocomplete";
-  @import "modules/menu/tabcomplete";
-  @import "modules/menu/flex";
-  @import "modules/menu/filters";
-  @import "modules/menu/direct-messaging";
+@import "modules/header/base";
+@import "modules/header/search";
+@import "modules/header/day-divider";
+@import "modules/header/banners";
+@import "modules/header/topic-editor";
 
-  @import "modules/header/base";
-  @import "modules/header/search";
-  @import "modules/header/day-divider";
-  @import "modules/header/banners";
-  @import "modules/header/topic-editor";
+@import "modules/messaging/base";
+@import "modules/messaging/light";
+@import "modules/messaging/dense";
+@import "modules/messaging/overlay";
+@import "modules/messaging/banners";
+@import "modules/messaging/attachments";
+@import "modules/messaging/quotes";
+@import "modules/messaging/code";
+@import "modules/messaging/unreads";
 
-  @import "modules/messaging/base";
-  @import "modules/messaging/light";
-  @import "modules/messaging/dense";
-  @import "modules/messaging/overlay";
-  @import "modules/messaging/banners";
-  @import "modules/messaging/attachments";
-  @import "modules/messaging/quotes";
-  @import "modules/messaging/code";
-  @import "modules/messaging/unreads";
+@import "modules/flexpane/base";
+@import "modules/flexpane/channel";
+@import "modules/flexpane/search";
+@import "modules/flexpane/mentions";
+@import "modules/flexpane/reactions";
+@import "modules/flexpane/files";
+@import "modules/flexpane/team";
+@import "modules/flexpane/whats-new";
 
-  @import "modules/flexpane/base";
-  @import "modules/flexpane/channel";
-  @import "modules/flexpane/search";
-  @import "modules/flexpane/mentions";
-  @import "modules/flexpane/reactions";
-  @import "modules/flexpane/files";
-  @import "modules/flexpane/team";
-  @import "modules/flexpane/whats-new";
+@import "modules/emojis/base";
+@import "modules/emojis/reactions";
 
-  @import "modules/emojis/base";
-  @import "modules/emojis/reactions";
+@import "modules/modals/base";
+@import "modules/modals/channel";
+@import "modules/modals/channels";
+@import "modules/modals/direct-messages";
+@import "modules/modals/file";
+@import "modules/modals/profile";
+@import "modules/modals/preferences";
+@import "modules/modals/invite";
+@import "modules/modals/omnibox";
+@import "modules/modals/share";
+@import "modules/modals/quick-search";
+@import "modules/modals/call";
+@import "modules/modals/help";
+@import "modules/modals/keyboard-shortcuts";
 
-  @import "modules/modals/base";
-  @import "modules/modals/channel";
-  @import "modules/modals/channels";
-  @import "modules/modals/direct-messages";
-  @import "modules/modals/file";
-  @import "modules/modals/profile";
-  @import "modules/modals/preferences";
-  @import "modules/modals/invite";
-  @import "modules/modals/omnibox";
-  @import "modules/modals/share";
-  @import "modules/modals/quick-search";
-  @import "modules/modals/call";
-  @import "modules/modals/help";
-  @import "modules/modals/keyboard-shortcuts";
+@import "modules/tooltips/base";
+@import "modules/tooltips/coachmarks";
+@import "modules/tooltips/member";
 
-  @import "modules/tooltips/base";
-  @import "modules/tooltips/coachmarks";
-  @import "modules/tooltips/member";
+@import "modules/color-overrides";
+@import "modules/hacks";
 
-  @import "modules/color-overrides";
-  @import "modules/hacks";
-
-  @import "pages/api";
-  @import "pages/apps";
-  @import "pages/oauth";
-  @import "pages/pricing";
-  @import "pages/spaces";
-  @import "pages/website";
-  @import "pages/status";
-  @import "pages/split";
-
-}
+@import "pages/api";
+@import "pages/apps";
+@import "pages/oauth";
+@import "pages/pricing";
+@import "pages/spaces";
+@import "pages/website";
+@import "pages/status";
+@import "pages/split";
