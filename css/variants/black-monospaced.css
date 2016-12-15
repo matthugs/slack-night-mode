@@ -404,9 +404,9 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #msg_input { color: #e6e6e6 !important; background: none !important; border-color: #363636 !important; }
 
-#msg_input:hover { border-color: #000 !important; }
+#msg_input:hover, #msg_input:focus { border-color: #000 !important; }
 
-#msg_input:focus + #primary_file_button:not(:hover):not(.active) { border-color: #000 !important; }
+#msg_input:hover + #primary_file_button, #msg_input:focus + #primary_file_button { border-color: #000 !important; }
 
 .ts_toggle .ts_toggle_button { background: #000; color: #e6e6e6; }
 

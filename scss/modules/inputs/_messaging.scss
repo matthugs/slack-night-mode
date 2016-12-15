@@ -113,11 +113,12 @@
   background: none !important;
   border-color: $color-shade-dark !important;
 
-  &:hover {
+  &:hover, &:focus {
     border-color: $color-shade-darkest !important;
+    &+#primary_file_button {
+      border-color: $color-shade-darkest !important;
+    }
   }
-  &:focus+#primary_file_button:not(:hover):not(.active) {
-    border-color: $color-shade-darkest !important;
-  }
+  
 }
 
