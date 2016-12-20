@@ -1,5 +1,7 @@
 # Slack Night Mode
-A stylesheet for the desktop Slack application. [CC BY-SA 3.0 US](https://creativecommons.org/licenses/by-sa/3.0/us/).
+
+A stylesheet for the desktop Slack application. [CC BY-SA 3.0
+US](https://creativecommons.org/licenses/by-sa/3.0/us/).
 
 ## Usage
 
@@ -19,17 +21,22 @@ $.ajax({
 });
 ```
 in the javascript console (which can be brought up with the keystroke
-C-`). If you don't execute any other javascript, you can easily replay
-this statement later by using the up arrow, since Chromium's console
-history is persistent.
+C-`). If you don't execute any other javascript in the lifetime of
+that slack session, you can easily replay this statement later by
+using the up arrow, since Chromium's console history is persistent.
 
 ### Opening Developer Tools
 
-I've only come across ways of doing this for the Windows and Linux desktop applications, but the OSX version currently eludes me. If anyone has that solution, I would be delighted to see that pull request.
+I've only come across ways of doing this for the Windows and Linux
+desktop applications, but the OSX version currently eludes me. If
+anyone has that solution, I would be delighted to see that pull
+request.
 
 #### Linux
 
-There's an environment variable for that! Launch slack with `SLACK_DEVELOPER_MENU=nonempty slack &`, a change persistable in any number of different ways (e.g. by writing a small shell script).
+There's an environment variable for that! Launch slack with
+`SLACK_DEVELOPER_MENU=nonempty slack &`, a change persistable in any
+number of different ways (e.g. by writing a small shell script).
 
 #### Windows
 
@@ -47,9 +54,17 @@ opening that drawer for users who are not members of multiple teams.
 #### Black ([source](scss/main.scss) - [build](css/black.css))
 
 
-The primary supported theme. This is an excellent theme if you use a program like f.lux or redshift.
+The primary supported theme. This is an excellent theme if you use a
+program like f.lux or redshift.
 
 ![Black Screenshot](https://userstyles.org/style_screenshots/117475_after.png)
 
-(Other themes are supported by laCour's version, and these are built and available to be tried out for a spin. I haven't tested them, however, and can make no guarantees about their suitability on the eyes.)
+(Other themes are supported by laCour's version, and these are built
+and available to be tried out for a spin. I haven't tested them,
+however, and can make no guarantees about their suitability on the
+eyes.)
 
+## Note
+
+laCour's work, on which this project is based, is licensed under a
+significantly more permissive license.
